@@ -25,18 +25,18 @@ a{
     text-decoration: none;
 }
 
-/* img{ <-временное изменение, так как проблемы с размером логотипа, не совсем понимаю как это поправить->
-    max-width: 100%;
-} */ 
-
+html,
 body{
     width: 100%;
     height: 100%;
-    
+}
+
+body{
     font-family: 'Arial';
     font-size: 15px;
     line-height: 24px;
     color: #CDCDCD;
+    background-color: black;
 }
 
 .wrapper{
@@ -47,14 +47,19 @@ body{
 
 .header{
     max-width: 1200px;
-    margin:0 auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     
     left:0;
     right:0;
     top:60px;
     position: absolute;
+}
+
+.logo{
+    margin-left:30px;
 }
 
 .img-logo{
@@ -63,11 +68,18 @@ body{
 
 .burger{
     display: none;
+    align-items: center;
+}
+
+.burger-swap{
+    display: none;
+    align-items: center;
 }
 
 .navigation{
     display: flex;
     align-items: center;
+    margin-right: 30px;
 }
 
 .navigation__list{
@@ -75,53 +87,6 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-
-@media (max-width:768px){
-    .header{
-        max-width: 708px;
-        
-    }
-    .navigation__list{
-        min-width: 440px;
-   }
-}
-
-
-@media (max-width:650px){
-    .header{
-        max-width: 490px;
-    }
-    .navigation{
-        display: none;
-    }
-    .navigation__list{
-        display: none;
-    }
-    .burger{
-        display: flex;
-        align-items: center;
-        right: 43px;
-    }
-}
-
-@media (max-width:320px){
-    .header{
-        max-width: 260px;
-        left: calc(50% - 257px/2 - 21.5px);
-    }
-    .navigation{
-        display: none;
-    }
-    .navigation__list{
-        display: none;
-    }
-    .burger{
-        display: flex;
-        align-items: center;
-        right: 43px;
-    }
-}
-
 
 .navigation__item{
     margin-right: 35px;
@@ -140,376 +105,6 @@ body{
     color: #CDCDCD;
 }
 
-.hero{
-    display: flex;
-    justify-content: space-between;
-    max-width: 1280px;
-    /* align-items: center; --Не совсем подходит */
-    margin: 0 auto;
-}
-
-.hero__content{
-    display: flex;
-    flex-direction: column;
-    margin-left: 40px;
-    margin-top: 343px;
-}
-
-.hero-content__heading{
-    font-size: 44px;
-    color: #FFFFFF;
-    line-height: 57px;
-}
-
-.content-subheading{
-    margin-top: 42px;
-    color: #CDCDCD;
-}
-
-.content-button{
-    display: block; 
-    box-sizing: border-box;
-    width: 207px;
-    margin-top: 42px;
-    padding:15px ;
-    gap: 10px;
-    border-radius: 100px;
-    background: #F1CDB3;
-    text-align: center;
-}
-
-.content-button:hover{
-    background: #FDDCC4;
-}
-
-.button_text{
-    align-items: flex-start;
-    font-family: 'Georgia';
-    font-style: normal;
-    font-size: 17px;
-    letter-spacing: 0.06em;
-    color: #292929;
-}
-
-.content__picture{
-    margin-top: 180px;
-    margin-right: 40px;
-    }
-
-.about{
-    margin: 0 auto;
-}
-
-.about__content{
-    max-width: 850px;
-    display: flex; 
-    margin: 0 auto;
-    margin-top: 80px;
-    margin-bottom: 100px;
-}
-
-.about-content__text{
-    display: flex;
-    flex-direction: column;
-    margin-left: 120px;
-    justify-content: center;
-}
-
-.about-content__heading{
-   margin-bottom: 25px;
-}
-
-.about-content__subheading{
-    color: #4C4C4C;
-    margin-bottom: 25px;
-}
-.about-content__subheading:last-child{
-    margin-bottom: 0px;
-}
-
-.ourfriends{
-    background: #F6F6F6;
-    margin: 0 auto;
-}
-
-.ourfriends__content{
-    max-width: 1200px;
-    display:flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
-
-.ourfriends-content__slider{
-    display: flex;
-}
-
-.ourfriends-content__heading{
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 60px;
-}
-
-.slider{
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    align-items: center;
-}
-
-.slider__card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    background: #FAFAFA;
-}
-
-.card-name{
-    font-family: 'Georgia';
-    font-style: normal;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: 0.06em;
-    color: #545454;
-    margin-top:30px;
-}
-
-.card-button{
-    background-color: #FAFAFA;
-    display: block;
-    box-sizing: border-box;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: 2px solid #F1CDB3;
-    border-radius: 100px;
-    padding: 15px 45px;
-    gap: 10px;
-}
-
-.card-button:hover{
-    background: #FDDCC4;
-    border: 2px solid #FDDCC4;
-}
-
-.slider__arrowleft{
-    padding: 23px 19px;
-    display: block;
-    box-sizing: border-box;
-    border: 2px solid #F1CDB3;
-    border-radius: 100%;
-    background-color: transparent;
-}
-
-.slider__arrowleft:hover{
-    background: #FDDCC4;
-    border: 2px solid #FDDCC4;
-}
-
-.slider__arrowright{
-    display: block;
-    box-sizing: border-box;
-    padding: 23px 19px;
-    border: 2px solid #F1CDB3;
-    border-radius: 100px;
-    background-color: transparent;
-}
-
-.slider_arrowright:hover{
-    background: #FDDCC4;
-    border: 2px solid #FDDCC4;
-}
-
-.ourfriends-content__secondbutton{
-    display: block; 
-    box-sizing: border-box;
-    margin: 0 auto;
-    margin-bottom: 100px;
-    margin-top: 60px;
-    padding: 15px 45px;
-    gap: 10px;
-    background: #F1CDB3;
-    border-radius: 100px;
-    border: rgba(0, 0, 0, 0);
-}
-
-.ourfriends-content__secondbutton:hover{
-    background: #FDDCC4;
-}
-
-.help{
-    margin: 0 auto;
-}
-
-.help__heading{
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 45px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #545454;
-    margin-top: 80px;
-}
-
-.help__content{
-    display: flex;
-    margin: 0 auto;
-    margin-top: 60px;
-    flex-direction: column;
-    max-width: 1026px;
-}
-
-.one{
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
-
-.two{
-    width: 858px;
-    margin: 0 auto;
-    margin-top: 58px;
-    margin-bottom:100px;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
-
-.list__item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.link__text{
-    font-family: 'Georgia';
-    font-style: normal;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    margin-top: 30px;
-    color: #545454;
-}
-
-.donation{
-    margin: 0 auto;
-}
-
-.donation-content{
-    max-width: 915px;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 80px;
-    margin-bottom: 100px;
-}
-
-.img__dog{
-    margin-top: 11px;
-    margin-bottom: 10px;
-}
-
-.donation-content__text{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 30px;
-}
-
-.donations__card-info{
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 17px;
-    color: #545454;
-}
-
-.credit-card__button{
-    background: #F1CDB3;
-    width: 349px;
-    border-radius: 9px;
-    display:flex;
-    justify-content: space-between;
-    padding: 10px 15px;
-    gap: 10px;
-}
-
-.card-button__text{
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: 0.06em;
-    color: #545454;
-}
-
-.credit-card__text{
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: 0.06em;
-    color: #545454;
-}
-
-.donations_subheading{
-    font-family: 'Arial';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    color: #B2B2B2;
-}
-
-.footer{
-    margin: 0 auto;
-    background: url(../images/hero/setka.png),
-    radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
-}
-
-.footer__content{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 40px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.contacts{
-    height: 234px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.locations{
-    height: 234px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.footer__header{
-    color: #FFFFFF;
-}
-
-.link-footer{
-    display:inline-flex;
-    align-items: center;
-    width: 251px;
-}
-
-.link-text{
-    color: #F1CDB3;
-    margin-left: 20px;
-}
-}
 
 @font-face {
     font-family: Arial;
