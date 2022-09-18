@@ -1,13 +1,11 @@
-@media (max-width: 768px) {  
+@media (max-width: 770px) {  
     .header{
-        max-width: 708px;
         top: 30px;
     }
 }
 
 @media (max-width: 690px) {
     .header{
-        max-width: 630px;
     }
     .logo{
         margin-left:30px;

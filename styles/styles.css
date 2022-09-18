@@ -71,6 +71,10 @@ body{
     align-items: center;
 }
 
+.burger:hover{
+    cursor: pointer;   
+}
+
 .burger-swap{
     display: none;
     align-items: center;
@@ -79,6 +83,13 @@ body{
 .navigation{
     display: flex;
     align-items: center;
+    margin-right: 30px;
+}
+
+.navigation2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-right: 30px;
 }
 
