@@ -15,7 +15,7 @@
         display: none;
     }
     
-    .burger{
+    .click{
         display: block;
         margin-right: 30px;
     }
@@ -31,8 +31,12 @@
         margin-left: 10px;
     }
 
-    .burger{
-        margin-right: 57px;
+    .click{
+        display: block;
+    }
+
+    .burger__navigation{
+        display: flex;
     }
 }
 
