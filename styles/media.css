@@ -1,0 +1,43 @@
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+  .header {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-right: 0;
+    top:30px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .burg {
+    display: flex;
+    margin-right: 53px;
+  }
+}
+
+@media (min-width: 768px){
+  .burger{
+    display:none;
+  }
+
+  .logo{
+    display:block;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    margin-left: 10px;
+  }
+}
