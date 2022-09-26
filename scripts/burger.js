@@ -1,11 +1,11 @@
-const burger = document.querySelector('.burg');
-const burgerActive = document.querySelector('.burger');
-const logoHiden = document.querySelector('.logo');
+const burgerButtonElement = document.querySelector('.burger-button');
+const mobileMenuElement = document.querySelector('.mobile-menu');
+const logoElement = document.querySelector('.logo');
 
 
 
-burger.onclick = function() {
-  burgerActive.classList.toggle('active');
-  burger.classList.toggle('open');
-  logoHiden.classList.toggle('hiden');
+burgerButtonElement.onclick = function () {
+  logoElement.classList.toggle('logo--hidden');
+  mobileMenuElement.classList.toggle('mobile-menu--open');
+  burgerButtonElement.classList.toggle('burger-button--open');
 }
