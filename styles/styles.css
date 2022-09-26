@@ -83,6 +83,13 @@ body {
 .logo--mobile {
   margin-top: 30px;
   margin-left: 10px;
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+.logo--transition{
+  opacity: 1;
 }
 
 .burger-button {
