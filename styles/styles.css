@@ -36,9 +36,9 @@ a {
   text-decoration: none;
 }
 
-/* img {
+img {
   max-width: 100%;
-} */
+}
 
 html,
 body {
@@ -52,7 +52,7 @@ body {
   line-height: 24px;
   color: #cdcdcd;
 
-  background: url(../images/header/setka.png),
+  background: url(../images/header/grid.png),
     radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
 }
 
@@ -96,6 +96,7 @@ body {
   z-index: 2;
   transition: 0.9s;
   display: none;
+  cursor: pointer;
 }
 
 .burger-button--open {
@@ -119,8 +120,11 @@ body {
   border-bottom: 3px solid transparent;
 }
 
-.navigation__item:hover {
+.navigation__item:hover{
   border-bottom-color: #f1cdb3;
+}
+
+.navigation__link:hover {
   color: #FAFAFA;
 }
 

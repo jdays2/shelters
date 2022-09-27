@@ -3,11 +3,9 @@ const mobileMenuElement = document.querySelector('.mobile-menu');
 const logoElement = document.querySelector('.logo');
 const logoMobileElement = document.querySelector('.logo--mobile');
 
-
-
-burgerButtonElement.onclick = function () {
+burgerButtonElement.addEventListener('click', function(){
   logoElement.classList.toggle('logo--hidden');
   mobileMenuElement.classList.toggle('mobile-menu--open');
   burgerButtonElement.classList.toggle('burger-button--open');
   logoMobileElement.classList.toggle('logo--transition');
-}
+});
