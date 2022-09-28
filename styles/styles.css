@@ -162,17 +162,6 @@ body {
   margin: 0 auto;
 }
 
-.navigation__list--mobile {
-  margin-top: 158px;
-  flex-direction: column;
-  justify-content: center;
-
-  font-family: 'Arial';
-  font-style: normal;
-  font-size: 32px;
-  line-height: 53px;
-}
-
 .navigation__item--mobile:last-child {
   margin: 0;
 }
