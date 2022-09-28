@@ -81,6 +81,8 @@ body {
 }
 
 .logo--mobile {
+  position: relative;
+  max-width: 184px;
   margin-top: 30px;
   margin-left: 10px;
   opacity: 0;
@@ -169,12 +171,6 @@ body {
   font-style: normal;
   font-size: 32px;
   line-height: 53px;
-
-}
-
-.navigation__item--mobile {
-  margin: 0;
-  margin-bottom: 43px;
 }
 
 .navigation__item--mobile:last-child {

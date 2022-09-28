@@ -21,10 +21,17 @@
     display: flex;
     margin-right: 53px;
   }
+
+  .navigation__item{
+    margin: 0;
+    margin-bottom: 43px;
+  }
 }
+  
 
 @media (max-width: 576px) {
   .logo {
+    margin: 0;
     margin-left: 10px;
   }
 }
