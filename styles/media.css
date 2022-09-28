@@ -1,0 +1,37 @@
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {
+  .header {
+    top: 30px;
+  }
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+
+  .navigation--mobile {
+    display: flex;
+  }
+
+  .burger-button {
+    display: flex;
+    margin-right: 53px;
+  }
+
+  .navigation__item{
+    margin: 0;
+    margin-bottom: 43px;
+  }
+}
+  
+
+@media (max-width: 576px) {
+  .logo {
+    margin: 0;
+    margin-left: 10px;
+  }
+}
