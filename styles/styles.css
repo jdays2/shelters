@@ -56,6 +56,8 @@ body {
 .header {
   max-width: 1200px;
   display: flex;
+  padding-left:40px;
+  padding-right: 40px;
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
@@ -70,7 +72,6 @@ body {
   display: block;
   opacity: 1;
   transition: .4s;
-  margin-left: 40px;
 }
 
 .logo--hidden {
@@ -85,6 +86,7 @@ body {
   opacity: 0;
   transition: 1s;
   transition-delay: 0.5s;
+  top:30px;
 }
 
 .logo--transition {
@@ -107,7 +109,6 @@ body {
 .navigation {
   display: flex;
   align-items: center;
-  margin-right: 40px;
 }
 
 .navigation--mobile {
@@ -175,60 +176,95 @@ body {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
-  align-items: center;
+  align-items:center;
+ 
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 150px;
   margin: 0 auto;
 }
 
-.hero__content {
+.hero-content {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
+  align-items:flex-start;
+  max-width: 460px;
 }
 
-.hero__heading {
+.hero-content__heading {
   max-width: 310px;
   font-size: 44px;
   color: #FFFFFF;
   line-height: 57px;
+  margin-bottom: 42px;
 }
 
-.hero__subheading {
-  max-width: 460px;
-  margin-top: 42px;
+.hero-content__subheading {
   color: #CDCDCD;
-}
-
-.hero__picture {
-  margin-top: 180px;
-  margin-right: 40px;
+  margin-bottom:42px;
 }
 
 .button {
   display: flex;
-  align-items: center;
-  justify-content: center;
+ 
   padding: 15px 45px;
   gap: 10px;
-  width: 210px;
 
   background: #F1CDB3;
   border-radius: 100px;
-  margin-top: 42px;
 
   transition: 1s;
+
+  
+  font-family: 'Georgia';
+  font-style: normal;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #292929;
 }
 
 .button:hover {
   background: #FDDCC4;
 }
 
-.button__text {
-  text-align: center;
-  font-family: 'Georgia';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 22px;
-  letter-spacing: 0.06em;
-  color: #292929;
+.about{
+  max-width: 1200px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+}
+
+.about__content{
+  max-width: 845px;
+  display: flex; 
+  margin: 0 auto;
+  margin-top: 80px;
+  padding-bottom: 100px;
+  justify-content: space-between
+}
+
+.about__picture{
+  margin-right:40px;
+}
+
+.about-content__text{
+  display: flex;
+  flex-direction: column;
+  max-width: 430px;
+}
+
+.about-content__heading{
+  padding-top: 14px;
+  max-width: 300px;
+  padding-bottom:25px;
+}
+
+.about-content__subheading{
+  color: #4C4C4C;
+  padding-bottom:25px;
+}
+
+.about-content__subheading:last-child{
+  padding-bottom: 0px
 }

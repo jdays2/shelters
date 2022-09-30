@@ -4,11 +4,31 @@
   .header {
     top: 30px;
   }
+
+  .hero{
+    padding-top:120px;
+  }
 }
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+  .hero__picture{
+    width: 425px;
+  }
+}
 
 @media (max-width: 768px) {
+  .header{
+    margin:0;
+    padding:0;
+    margin-left:30px;
+    margin-right:53px;
+  }
+
+  .logo {
+    margin: 0;
+    margin-left:10px;
+  }
+
   .navigation {
     display: none;
   }
@@ -19,7 +39,10 @@
 
   .burger-button {
     display: flex;
-    margin-right: 53px;
+  }
+
+  .burger-button--open{
+   right: 53px;
   }
 
   .navigation__item{
@@ -43,6 +66,7 @@
 
   .hero{
     flex-direction: column;
+    padding-top:150px;
   }
 
   .hero__content{
@@ -53,23 +77,53 @@
   .button{
     margin: 0 auto;
     margin-bottom:100px;
-    margin-top:42px;
   }
 
   .hero__picture{
-    margin-left:169px;
-    margin-top:0px;
+    margin: 0;
+    margin-left:100px;
+  }
+
+  .about{
+    padding-left:30px;
+    padding-right:30px;
+  }
+
+  .about__content{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .about-content__text{
+    margin-bottom: 80px;
+  }
+
+  .about__picture{
+    height: 408px;
+    width: 300px;
+    margin: 0;
+   
   }
 }
   
 
 @media (max-width: 576px) {
+  .header{
+    margin:0;
+    margin-right:53px;
+    padding: 0;
+  }
+
   .logo {
     margin: 0;
     margin-left: 10px;
   }
 
-  .hero__content{
+  .logo-mobile{
+    left:10px;
+  }
+
+  .hero-content{
     justify-content: center;
     align-items: center;
   }
@@ -78,14 +132,19 @@
     margin-bottom:105px;
   }
 
-  .hero__heading{
+  .hero{
+    margin-left:10px;
+    margin-right: 10px;
+  }
+
+  .hero-content__heading{
     width: 210px;
     text-align: center;
     font-size: 25px;
     line-height:32px;
   }
 
-  .hero__subheading{
+  .hero-content__subheading{
     text-align: center;
     width: 300px;
     font-size: 15px;
@@ -94,9 +153,39 @@
 
   .hero__picture{
     margin-left:50px;
-    margin-top:0px;
     height: 271.7px;
-
-
+    width: 260px;
   }
+
+  .about{
+    padding-left:10px;
+    padding-right: 10px;
+  }
+
+  .about__picture{
+    height: 353px;
+    width: 260px;
+  }
+
+  .about-content__text{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 42px;
+  }
+
+  .about-content__heading{
+    font-size: 25px;
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    line-height: 32px;
+  }
+
+  .about-content__subheading{
+    font-size: 15px;
+  }
+
+
+
 }
