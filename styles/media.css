@@ -14,6 +14,11 @@
   .hero__picture{
     width: 425px;
   }
+
+  .hero-content__subheading {
+    margin-top: -20px;
+    margin-bottom: 22px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -72,6 +77,10 @@
   .hero__content{
     margin: 0 auto;
     margin-top: 150px;
+  }
+
+  .hero-content__subheading {
+    margin-bottom: 42px;
   }
 
   .button{

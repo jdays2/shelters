@@ -36,9 +36,9 @@ a {
   text-decoration: none;
 }
 
-img {
+/* img {
   max-width: 100%;
-}
+} */
 
 html,
 body {
@@ -94,14 +94,14 @@ body {
 }
 
 .burger-button {
-  z-index: 2;
-  transition: 0.9s;
+  z-index: 5;
+  transition: 1.1s;
   display: none;
   cursor: pointer;
 }
 
 .burger-button--open {
-  transform: rotate(270deg);
+  transform: rotate(-180deg);
   position: fixed;
   right: 0px;
 }
@@ -212,10 +212,8 @@ body {
 
   background: #F1CDB3;
   border-radius: 100px;
-
   transition: 1s;
 
-  
   font-family: 'Georgia';
   font-style: normal;
   font-size: 17px;
@@ -226,6 +224,7 @@ body {
 
 .button:hover {
   background: #FDDCC4;
+  cursor: pointer;
 }
 
 .about{
@@ -267,4 +266,218 @@ body {
 
 .about-content__subheading:last-child{
   padding-bottom: 0px
+}
+
+.ourfriends{
+  background: #F6F6F6;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
+}
+
+.slider-wrapper{
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourfriends__heading{
+  text-align: center;
+  width: 400px;
+  margin:0 auto;
+  padding-top: 80px;
+  margin-bottom: 60px;
+}
+ 
+ .slider{
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 990px;
+  display: flex;
+  align-items: center;
+}
+
+.slider__line{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  position:relative;
+  left: 0px;
+  transition: 1s;
+} 
+
+.arrow-revers{
+  width: 14px;  
+  transform: rotate(180deg);
+}
+
+.arrow{
+  width:auto;
+}
+
+.button--arrow{
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  background-color: inherit;
+  padding: 23px 19px;
+  transition: 0.5s;
+}
+
+.button--arrow:hover{
+  background: #FDDCC4;
+}
+
+.slider__card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FAFAFA;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+.slider__card:first-child{
+  margin-left: 0px;
+}
+
+.slider-card__card-name{
+  font-family: 'Georgia';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin-bottom:30px;
+}
+
+.slider-card__img{
+  margin-bottom: 30px;
+  border-radius: 9px 9px 0px 0px;  
+}
+
+.button-slider{
+  background-color: #FAFAFA;
+  border: 2px solid #F1CDB3;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: #292929;
+
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 15px 45px;
+  gap: 10px;
+  border-radius: 100px;
+  white-space:nowrap;
+  margin-bottom: 30px;
+}
+
+.button-slider:hover{
+  background: #FDDCC4;
+}
+
+.button--primary{
+  margin: 0 auto;
+  background: #F1CDB3;
+  border: 0;
+  margin-bottom: 100px;
+  transition: 0.6s;
+}
+
+.button--primary:hover{
+  background: #FDDCC4;
+}
+
+.profile-window{
+  background-color: inherit;
+  position:fixed;
+  display: none;
+  left: 50%;
+  top: 50%;
+  margin-top: -252px;
+  margin-left: -450px;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 3;
+}
+
+.profile-window--open{
+  display: flex;
+}
+
+.profile-window--close{
+  display:none;
+}
+
+.profile-window__content{
+  background: #FAFAFA;
+  align-items: flex-start;
+  box-shadow: 0 0 0 9999px #29292999;
+  border-radius: 9px;
+  margin: 0 auto;
+  width: 900px;
+  display:flex;
+}
+
+.profile-window__img{
+  width: 500px;
+}
+
+.profile-window__description{
+  flex-direction: column;
+  width: 351px;
+  margin-left:30px;
+  margin-top:50px;
+
+  font-family: 'Georgia';
+  letter-spacing: 0.06em;
+  font-style: normal;
+  color: #000000;
+}
+
+.profile-window__heading{
+  font-size: 35px;
+  line-height: 45px;
+  margin-bottom: 10px;
+}
+
+.profile-window__subheading{
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 40px;
+}
+
+.profile-window__story{
+  font-size: 15px;
+  line-height: 17px;
+  margin-bottom: 40px
+}
+
+.profile-window__data{
+  list-style-image: url(../images/our-friends/dot.svg);
+  list-style-position: inside;
+}
+
+.button--close-window{
+  background-color: rgb(0,0,0,0);
+  margin-right: 0px;
+  border-radius: 100px;
+  border: 2px solid #F1CDB3;
+  width: 52px;
+  height: 52px;
+  z-index: 1;
+  margin-right: -42px;
+  margin-top: -52px;
+}
+
+.button--close-window:hover{
+  cursor: pointer;
 }
